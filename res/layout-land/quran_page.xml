@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:id="@+id/txtPageNotFound" android:text="@string/pageNotFound"
+		android:visibility="gone" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="16sp" />
+	<com.quran.labs.androidquran.widgets.GalleryFriendlyScrollView
+		android:id="@+id/pageScrollView" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<!-- <ImageView android:id="@+id/pageImageView"
+			android:background="#FFF4CB" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" /> -->
+		<com.quran.labs.androidquran.widgets.QuranTextView
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent" 
+		    android:id="@+id/pagePinchView"
+		    android:gravity="center_horizontal"
+			android:textColorLink="#000000"
+			android:textColor="#000000"
+			android:background="#FFFDF1C7"
+			android:lines="15"
+			android:textSize="25dp"
+		    android:lineSpacingMultiplier="0.81" />
+	</com.quran.labs.androidquran.widgets.GalleryFriendlyScrollView>
+</LinearLayout>
